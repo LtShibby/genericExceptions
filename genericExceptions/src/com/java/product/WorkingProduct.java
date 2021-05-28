@@ -15,6 +15,11 @@ public class WorkingProduct {
 		} catch (MyCustomException e) {
 			System.out.println("ok now we will print this stack trace from WorkingProduct.java line 16");
 			e.printStackTrace();
+		} finally {
+			System.out.println("Glad that's over.");
 		}
+		
+		System.out.println("This is the end of the main class.");
+	}
 	}
 }
