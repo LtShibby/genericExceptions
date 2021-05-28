@@ -48,7 +48,8 @@ public class MyBusinessLogic {
 			System.out.println("Gee, looks like we FINALLY made it. get it? no? ok..");
 		}
 		
-		try {
+		try {			
+			GenericMethods.checkArrayTypes(charArray);
 			GenericMethods.checkArrayTypes(differentTypesArray);
 		} catch (MyCustomException e) {
 			System.out.println("HEY WAIT A MINUTE!! i found something we don't want here in MyBusinessLogic.java line 54!");
