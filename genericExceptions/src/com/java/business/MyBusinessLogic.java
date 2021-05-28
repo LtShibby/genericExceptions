@@ -36,7 +36,7 @@ public class MyBusinessLogic {
 		System.out.println("\nArray differentTypesArray contains objects of the following types:");
 		GenericMethods.printArrayTypes(differentTypesArray);
 		
-		
+//		if you uncomment this line,  the entire thing will break when you run it. why?		
 //		System.out.println(differentTypesArray[10]);
 //		
 		
