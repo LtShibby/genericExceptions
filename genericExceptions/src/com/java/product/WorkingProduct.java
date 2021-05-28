@@ -21,5 +21,4 @@ public class WorkingProduct {
 		
 		System.out.println("This is the end of the main class.");
 	}
-	}
 }
