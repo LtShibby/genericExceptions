@@ -4,7 +4,7 @@ import com.java.exceptions.MyCustomException;
 
 public class GenericMethods {
 
-   public static < E > void printArray( E[] inputArray ) {
+   public static < E > void printArray( E [] inputArray ) {
       // Display array elements
       for(E element : inputArray) {
          System.out.printf("%s ", element);
@@ -21,6 +21,9 @@ public class GenericMethods {
 	   }
    
    public static < E > void checkArrayTypes( E[] inputArray ) throws MyCustomException {
+	   
+	   
+	   
 	      // Display array elements
 	   Integer integer = 1;
 	      for(E element : inputArray) {

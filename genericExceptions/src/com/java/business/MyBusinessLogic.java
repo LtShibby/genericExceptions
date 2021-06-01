@@ -1,12 +1,22 @@
 package com.java.business;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 import com.java.exceptions.MyCustomException;
 import com.java.generics.GenericMethods;
 
 public class MyBusinessLogic {
 
-	public void genericsExample() throws MyCustomException {
+	public void genericsExample() throws MyCustomException, FileNotFoundException {
+//		
+//		FileInputStream fis = null;
+//		
+//		fis = new FileInputStream("");
 
+		Integer arraySize = 9;
+		
 		// Create arrays of Integer, Double and Character
 		Integer[] intArray = { 1, 2, 3, 4, 5 };
 		Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
@@ -21,13 +31,14 @@ public class MyBusinessLogic {
 		System.out.println("\nArray characterArray contains:");
 		GenericMethods.printArray(charArray); // pass a Character array
 		
-		
+// if you uncomment this line it will throw null pointer exception
+//		Object[] differentTypesArray = new Object[arraySize];
 		Object[] differentTypesArray = new Object[6];
-		differentTypesArray[0] = new String("First Pair");
+		differentTypesArray[0] = new String("String1");
 		differentTypesArray[1] = new Integer(1);
-		differentTypesArray[2] = new String("Second Pair");
+		differentTypesArray[2] = new String("String2");
 		differentTypesArray[3] = new Double(2.2);
-		differentTypesArray[4] = new String("Third Pair");
+		differentTypesArray[4] = new String("String3");
 		differentTypesArray[5] = new Float(3.33333333);
 
 		System.out.println("\nArray differentTypesArray contains:");
@@ -38,7 +49,7 @@ public class MyBusinessLogic {
 		
 //		if you uncomment this line,  the entire thing will break when you run it. why?		
 //		System.out.println(differentTypesArray[10]);
-//		
+		
 		
 		try {
 			System.out.println(differentTypesArray[10]);
@@ -57,7 +68,6 @@ public class MyBusinessLogic {
 		}finally {
 			System.out.println("did this print? if so, we handled exceptions correctly and the finally block worked as expected.");
 		}
-		
 		System.out.println("will this print?");
 
 	}

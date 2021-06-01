@@ -3,10 +3,10 @@ package com.java.exceptions;
 public class MyCustomException extends Exception {
 
 	/**
-	 *  Auto Generated serial version UID
+	 * 
 	 */
-	private static final long serialVersionUID = 2695891167081663952L;
-	
+	private static final long serialVersionUID = -9173636766595515090L;
+
 	public MyCustomException() {
 		super();
 	}

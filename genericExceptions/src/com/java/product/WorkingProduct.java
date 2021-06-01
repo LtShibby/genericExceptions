@@ -1,8 +1,9 @@
 package com.java.product;
 
+import java.io.FileNotFoundException;
+
 import com.java.business.MyBusinessLogic;
 import com.java.exceptions.MyCustomException;
-import com.java.generics.GenericMethods;
 
 public class WorkingProduct {
 
@@ -13,6 +14,12 @@ public class WorkingProduct {
 		try {
 			myBusinessLogic.genericsExample();
 		} catch (MyCustomException e) {
+			System.out.println("ok now we will print this stack trace from WorkingProduct.java line 16");
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			System.out.println("ok now we will print this stack trace from WorkingProduct.java line 16");
+			e.printStackTrace();
+		} catch (Exception e) {
 			System.out.println("ok now we will print this stack trace from WorkingProduct.java line 16");
 			e.printStackTrace();
 		} finally {
